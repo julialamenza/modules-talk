@@ -1,9 +1,6 @@
-module "ec2" {
-  source = "./modules/ec2"
-
-  ami     = "ami-12345678"
-  key_name = "your-key-pair"
-
+module "servers" {
+  source = "./modules/servers"
+    servers = var.server
 }
 
 module "ec2_instance" {
