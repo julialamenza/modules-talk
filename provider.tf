@@ -4,5 +4,6 @@ terraform {
 
 # Default AWS provider 
 provider "aws" {
+  region = "eu-north-1"
 
   }

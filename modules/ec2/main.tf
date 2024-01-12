@@ -1,8 +1,7 @@
 resource "aws_instance" "web" {
   count         = var.servers
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = "t2.micro"
-  key_name      = "julia"
+  ami           = var.ami
+  instance_type = "t3.micro"
 
   tags = {
     Name = "HelloWorld"
