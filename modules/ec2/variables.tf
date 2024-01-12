@@ -1,0 +1,7 @@
+
+variable "servers" {
+  
+}
+variable "ami" {
+  
+}
